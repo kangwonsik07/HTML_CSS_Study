@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* 초기화 CSS */
+
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 0.9em;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: black;
+   text-decoration: none;
+}
+
+p {
+   margin: 0;
+}
+
+/* 고정형 레이아웃 */
+
+.wrap {
+   min-width: 1200px;
+   overflow: hidden;
+}
+
+/* 헤더 */
+
+header {
+   position: relative;
+   height: 85px;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid rgb(193, 193, 193);
+   background-color: white;
+   width: 100%; /* 직방은 메뉴의 width가 100% */
+}
+
+.nav__menu > li {
+   /* 하위 메뉴 만들기 위해 적용  */
+   position: relative;
+   top: 0;
+
+   /* 수평정렬 */
+   display: inline-block;
+   padding: 20px;
+}
+
+nav .login {
+   font-size: 11px;
+   background-color: rgb(232, 232, 232);
+   border: 1px solid rgb(202, 202, 202);
+   border-radius: 5px;
+   color: black;
+   width: 125px;
+   height: 30px;
+   margin-right: 20px;
+}
+
+nav .right-menu__btn {
+   width: 113px;
+}
+
+/* 본메뉴 */
+
+.w1 {
+   display: block;
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.w2 {
+   display: block;
+   font-size: 13px;
+}
+
+/* 하위메뉴 */
+
+.sub-menu {
+   /* 화면에서 안보임 */
+   display: none;
+   width: 200px;
+   background-color: white;
+
+   /* 하위 메뉴 만들기 위해 absolute적용(li태그를 기준으로 위치를 잡는다) */
+   position: absolute;
+
+   /* 하위메뉴가 나타날 위치(메뉴 height와 같다) */
+   top: 85px;
+   border: 1px solid rgb(202, 202, 202);
+}
+
+.nav__menu li:hover .sub-menu {
+   display: block;
+}
+
+.sub-menu > li {
+   padding: 10px;
+}

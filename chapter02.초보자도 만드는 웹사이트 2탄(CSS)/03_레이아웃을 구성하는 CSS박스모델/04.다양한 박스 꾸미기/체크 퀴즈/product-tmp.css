@@ -1,0 +1,35 @@
+#container {
+   margin: 0 auto;
+   /* border: 1px solid black; */
+   width: 650px;
+   /* 가운데 정렬할때 width를 줘야한다(기본은 100%로 되어있다) */
+}
+table {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-collapse: collapse;
+}
+th,
+td {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   padding: 10px 20px;
+}
+#description {
+   padding: 20px;
+   border: 1px dotted black;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   margin: 30px;
+}
+#receipe {
+   padding: 20px;
+   border: 1px dotted black;
+   margin: 30px;
+}
+
+#package {
+   padding: 20px;
+   border: 1px dotted black;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   margin: 30px;
+}

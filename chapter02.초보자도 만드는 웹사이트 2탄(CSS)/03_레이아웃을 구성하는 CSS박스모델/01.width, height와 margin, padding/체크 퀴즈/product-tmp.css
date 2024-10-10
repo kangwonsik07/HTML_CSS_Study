@@ -1,0 +1,15 @@
+#container {
+   margin: 0 auto;
+   border: 1px solid black;
+   width: 600px;
+   /* 가운데 정렬할때 width를 줘야한다(기본은 100%로 되어있다) */
+}
+table {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-collapse: collapse;
+}
+th,
+td {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   padding: 10px 20px;
+}

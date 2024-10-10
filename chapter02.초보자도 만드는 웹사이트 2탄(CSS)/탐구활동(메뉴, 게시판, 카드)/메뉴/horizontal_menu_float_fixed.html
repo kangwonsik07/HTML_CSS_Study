@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         *,
+         body {
+            margin: 0;
+            padding: 0;
+         }
+         body {
+            /* 강제 스크롤 */
+            height: 2000px;
+         }
+         nav {
+            /* 메뉴 고정 */
+            position: fixed;
+            width: 100%;
+            background-color: #333;
+         }
+         ul {
+            list-style: none;
+            background-color: #333;
+            overflow: hidden;
+            /* li태그에 float적용시 반드시 ul태그에 overflow적용 */
+            /* 메뉴 너비 고정 */
+            width: 1028px;
+            /* 메뉴 가운데 정렬 */
+            margin: 0 auto;
+         }
+         a {
+            display: block;
+            color: #fff;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+         }
+         li {
+            float: left;
+         }
+         a:hover {
+            background-color: #4c4c4c;
+         }
+         .active {
+            background-color: #448ada;
+         }
+      </style>
+   </head>
+   <body>
+      <body>
+         <!-- <nav>: 메뉴 부분을 감싸주는 태그(블록태그) -->
+         <nav>
+            <ul>
+               <li><a href="#">홈</a></li>
+               <li><a href="#">메뉴</a></li>
+               <li><a href="#">블로그</a></li>
+               <li style="float: right"><a href="#" class="active">로그인</a></li>
+            </ul>
+         </nav>
+      </body>
+   </body>
+</html>

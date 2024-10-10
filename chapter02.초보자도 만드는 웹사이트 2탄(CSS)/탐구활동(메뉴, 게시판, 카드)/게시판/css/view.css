@@ -1,0 +1,114 @@
+/* 초기화 CSS */
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 10px;
+}
+
+ul,
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* list */
+
+h2 {
+   font-size: 30px;
+}
+.check {
+   font-size: 15px;
+   float: right;
+   margin: 15px;
+}
+
+.warp {
+   width: 1000px;
+   margin: 0 auto;
+}
+
+.board_list {
+   width: 100%;
+   border-top: 1px solid black;
+   font-size: 1.5rem;
+   border-collapse: collapse;
+}
+
+.board_list th,
+.board_list td {
+   padding: 10px 10px;
+}
+
+.board_list tr > td:nth-child(1),
+.board_list tr > td:nth-child(4),
+.board_list tr > td:nth-child(5) {
+   text-align: center;
+}
+
+.noti_w {
+   font-weight: bold;
+   color: #ff4259;
+}
+.noti {
+   background-color: #f2f2f2;
+}
+.gong {
+   display: block;
+   margin: 10px;
+   border: 1px solid #ffc6c9;
+   background-color: #ffe3e4;
+   box-sizing: border-box;
+   width: 60px;
+   height: 35px;
+   border-radius: 3px;
+   line-height: 15px;
+   margin: 0 auto;
+}
+.borad_page a.article {
+   color: #000;
+}
+.board_page {
+   text-align: center;
+   background-color: #f9f9f9;
+}
+.board_page a {
+   font-size: 1.2rem;
+   display: inline-block;
+   margin-top: 15px;
+   width: 35px;
+   height: 35px;
+   box-sizing: border-box;
+   line-height: 35px;
+}
+.board_page a:hover {
+   text-decoration: underline;
+}
+.board_page a.bt {
+   font-size: 1.2rem;
+   letter-spacing: -1px;
+}
+
+.borad_page a.num {
+   font-size: 1.2rem;
+}
+
+.board_page a.num {
+   border: 1px solid black;
+   border-radius: 5px;
+   border-color: #000;
+   background-color: #fff;
+   color: #000;
+}
+
+.list-search {
+   display: block;
+   text-align: center;
+}
